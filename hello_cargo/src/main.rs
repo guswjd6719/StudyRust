@@ -1,61 +1,31 @@
+#![allow(unused)]
+enum IpAddrKind {
+    V4(u8, u8, u8, u8),
+    V6(String),
+}
+enum Coin {
+    Penny,
+    Nickel,
+    Dime,
+    Quarter,
+}
 fn main() {
+    let four: IpAddrKind = IpAddrKind::V4(127,0,0,1);
+    let six: IpAddrKind = IpAddrKind::V6(String::from("::1"));
 
-    // 연산
+    let cents = value_in_cents(Coin::Penny);
+    println!("Penny : {}", cents);
+    
+}
 
-    // addition
-    let sum = 5 + 10;
-	println!("{sum}");
-
-    // subtraction
-    let difference = 95.5 - 4.3;
-	println!("{difference}");
-
-    // multiplication
-    let product = 4 * 30;
-	println!("{product}");
-
-    // division
-    let quotient = 56.7 / 32.2;
-    let truncated = -5 / 3; // Results in -1
-	println!("{quotient}");
-	println!("{truncated}");
-
-    // remainder
-    let remainder = 43 % 5;
-	println!("{remainder}");
-
-    // Boolean
-    let f: bool = false; // with explicit type annotation
-
-    //Unicode 사용
-    let heart_eyed_cat = '😻';
-	println!("{heart_eyed_cat}");
-
-    //tuple
-    let tup = (500, 6.4, 1);
-    let (x, y, z) = tup;
-    println!("The value of y is: {y}");
-
-    let x: (i32, f64, u8) = (500, 6.4, 1);
-
-    let five_hundred = x.0;
-    let six_point_four = x.1;
-    let one = x.2;
-    println!("The value of 0 is: {five_hundred}");
-    println!("The value of 1 is: {six_point_four}");
-    println!("The value of 2 is: {one}");
-
-    //Array
-    let a: [i32; 5] = [1, 2, 3, 4, 5];
-    let first = a[0];
-    println!("Array a[0]: {first}");
-
-    let a = [3; 5]; // let a = [3, 3, 3, 3, 3];
-    let first = a[0];
-    let second = a[1];
-    let third = a[2];
-    println!("Array a[0]: {first}");
-    println!("Array a[1]: {second}");
-    println!("Array a[2]: {third}");
+fn value_in_cents(coin: Coin) -> u8 {
+    match coin {
+        Coin::Penny => 1,
+        Coin::Nickel => 5,
+        Coin::Dime => 10,
+        Coin::Quarter => 25,
+    }
+}
+fn route(ip_kind: IpAddrKind) {
 
 }
