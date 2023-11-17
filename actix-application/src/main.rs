@@ -1,6 +1,8 @@
 use actix_web::{get, post, web, App, HttpResponse, HttpServer, Responder, guard};
 use std::sync::Mutex;
+use crate::garden::vegetables::Asparagus;
 
+pub mod garden;
 
 struct AppStateWithCounter {
     counter: Mutex<i32>, // <- Mutex is necessary to mutate safely across threads
@@ -51,6 +53,9 @@ async fn main() -> std::io::Result<()> {
     let counter = web::Data::new(AppStateWithCounter {
         counter: Mutex::new(0),
     });
+
+    let plant = Asparagus {};
+    println!("I'm growing {:?}!", plant);
 
     HttpServer::new(move || {
         // move counter into the closure
