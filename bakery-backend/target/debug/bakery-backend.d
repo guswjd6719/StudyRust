@@ -1,0 +1,1 @@
+/Users/hj/Study/projects/bakery-backend/target/debug/bakery-backend: /Users/hj/Study/projects/bakery-backend/src/entities/bakery.rs /Users/hj/Study/projects/bakery-backend/src/entities/chef.rs /Users/hj/Study/projects/bakery-backend/src/entities/mod.rs /Users/hj/Study/projects/bakery-backend/src/entities/prelude.rs /Users/hj/Study/projects/bakery-backend/src/main.rs

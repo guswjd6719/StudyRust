@@ -1,0 +1,8 @@
+/Users/hj/Study/projects/comm/target/debug/deps/errno-88d6f6466c808d44.rmeta: /Users/hj/.cargo/registry/src/index.crates.io-6f17d22bba15001f/errno-0.3.7/src/lib.rs /Users/hj/.cargo/registry/src/index.crates.io-6f17d22bba15001f/errno-0.3.7/src/unix.rs
+
+/Users/hj/Study/projects/comm/target/debug/deps/liberrno-88d6f6466c808d44.rlib: /Users/hj/.cargo/registry/src/index.crates.io-6f17d22bba15001f/errno-0.3.7/src/lib.rs /Users/hj/.cargo/registry/src/index.crates.io-6f17d22bba15001f/errno-0.3.7/src/unix.rs
+
+/Users/hj/Study/projects/comm/target/debug/deps/errno-88d6f6466c808d44.d: /Users/hj/.cargo/registry/src/index.crates.io-6f17d22bba15001f/errno-0.3.7/src/lib.rs /Users/hj/.cargo/registry/src/index.crates.io-6f17d22bba15001f/errno-0.3.7/src/unix.rs
+
+/Users/hj/.cargo/registry/src/index.crates.io-6f17d22bba15001f/errno-0.3.7/src/lib.rs:
+/Users/hj/.cargo/registry/src/index.crates.io-6f17d22bba15001f/errno-0.3.7/src/unix.rs:
